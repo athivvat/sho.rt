@@ -10,10 +10,10 @@ class LinkList extends Component {
       const shortLink = `http://localhost:3000/${token}`;
 
       return (
-        <tr>
+        <tr key={link._id}>
           <td>{url}</td>
           <td>
-            <a href="{shortLink}">{shortLink}</a>
+            <a href={shortLink}>{shortLink}</a>
           </td>
           <td>{clicks}</td>
         </tr>
