@@ -8,7 +8,7 @@ Meteor.methods({
 
     // We're ready to save the url
     const token = Math.random().toString(36).slice(-5);
-    Links.insert({ url: url, token: token, click: 0 });
+    Links.insert({ url: url, token: token, clicks: 0 });
   }
 });
 
